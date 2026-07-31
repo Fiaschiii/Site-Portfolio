@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Miguel Fiaschi</title>
+  </head>
+
+
+  <body>
+      <div class="particulas"></div>
+
+    <nav class="navegacao">
+      <ul class="menu">
+        <li>
+          <a href="#inicio" class="menu-link">Início</a>
+        </li>
+
+        <li>
+          <a href="#sobre" class="menu-link">Sobre</a>
+        </li>
+
+        <li>
+          <a href="#projetos" class="menu-link">Projetos</a>
+        </li>
+
+        <li>
+          <a href="#contatos" class="menu-link">Contato</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+      <img src="https://i.pinimg.com/736x/32/07/b9/3207b96ba1f335a2b71fb4d0672158d9.jpg" alt="Foto de Miguel Fiaschi" class="foto-perfil"/>
+      <h1>Miguel Fiaschi</h1>
+      <p class="cabecalho-sub-titulo">Estudante de Programação</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+      <h2 class="sobre-titulo">Sobre Mim</h2>
+      <div class="sobre-caixa">
+        <p class="sobre-paragrafo">
+          Olá! Meu nome é Miguel Fiaschi, tenho 18 anos e sou estudante de
+          programação, atualmente cursando Banco de Dados na Universidade Presbiteriana Mackenzie.
+          Atuando na área de produção e estudando automatização de processos, estou sempre em busca de novos desafios e oportunidades para aplicar meus conhecimentos em projetos práticos. Sou apaixonado por tecnologia e estou comprometido em aprimorar minhas habilidades para contribuir de forma significativa no campo da indústria e programação.
+        </p>
+      </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+      <h2 class="projetos-titulo">Meus Principais Projetos</h2>
+      <div class="projetos-caixa">
+        <!-- Janela do Dashboard de Vendas -->
+        <div class="projetos-card">
+          <img src="https://i.pinimg.com/736x/0e/1f/ec/0e1fec1d8dbe1e7fc91f2e0821498024.jpg" alt="Projeto 1" class="projetos-imagem"/>
+          <div class="caixa-textos-projetos">
+           <h3 class="info-projetos">Dashboard de Vendas</h3>
+           <p class="paragrafo-projetos">
+            Projeto de um dashboard em Python para visualização de dados de
+            vendas.
+           </p>
+          </div>
+        </div>
+
+        <!-- Análise de Notas Escolares-->
+        <div class="projetos-card">
+          <img src="https://i.pinimg.com/736x/c0/23/ab/c023abb26e9a70df95b2f3c3ae3ccca5.jpg" alt="Projeto 1" class="projetos-imagem"/>
+         <div class="caixa-textos-projetos">
+           <h3 class="info-projetos">Análise de Notas Escolares</h3>
+           <p class="paragrafo-projetos">
+            Projeto em que consiste em uma análise exploratória de dados
+            utilizando Python.
+           </p>
+          </div>
+        </div>
+
+        <!-- Envio de E-mails -->
+        <div class="projetos-card">
+          <img src="https://i.pinimg.com/736x/e4/68/a0/e468a025c164bf9bb28c61761a0d7e4f.jpg" alt="Projeto 1" class="projetos-imagem"/>
+          <div class="caixa-textos-projetos">
+           <h3 class="info-projetos">Automação de Cadastro e Controle</h3>
+           <p class="paragrafo-projetos">
+           Automação de cadastro para gerenciar funcionários pelo Google Forms usando Python.
+           </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+      <h2 class="contatos-titulo">Entre em Contato</h2>
+      
+      <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+        <div class="grupo-form">
+          <input placeholder="Nome" class="campo-form" id="nome">
+        </div>
+
+        <div class="grupo-form">
+          <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
+        </div>
+      
+        <button type="submit" class="botao-form">Enviar WhatsApp</button>
+
+
+      </form>
+
+    </section>
+
+    <script>
+
+      function enviarWhats(event) {
+
+        event.preventDefault()
+
+        const nome = document.getElementById('nome').value
+        const mensagem = document.getElementById('mensagem').value
+        const telefone = '5511955502900'
+        
+        const texto = `Olá! Me chamo ${nome}. ${mensagem}`
+        const msgFormatada = encodeURIComponent(texto)
+
+        const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+
+        console.log(url)
+
+        window.open(url, '_blank')
+      }
+
+    </script>
+
+
+
+  </body>
+</html>
