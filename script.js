@@ -4,7 +4,7 @@ function enviarWhats(event) {
 
         
         const mensagem = document.getElementById('mensagem').value
-        const telefone = '**********' // Número desejado.
+        const telefone = '**********' // Número desejado
         
         const texto = `${mensagem}`
         const msgFormatada = encodeURIComponent(texto)
