@@ -3,111 +3,329 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Miguel Fiaschi | Product Owner, suporte a sistemas e dados</title>
+  <meta name="description"
+    content="Portfólio de Miguel Fiaschi: estagiário de Product Owner, estudante de Tecnologia em Banco de Dados no Mackenzie e projetos em Python, SQL e desenvolvimento web." />
+
+  <!-- Prévia do link quando compartilhado (LinkedIn, WhatsApp etc.) -->
+  <meta property="og:title" content="Miguel Fiaschi | Portfólio" />
+  <meta property="og:description"
+    content="Estagiário de Product Owner com foco em suporte a sistemas, requisitos e dados." />
+  <meta property="og:image" content="https://fiaschiii.github.io/Site-Portfolio/pasta_img_icon/img/foto_perfil_atualizada.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Ícone da aba: o SVG é usado pelos navegadores modernos; os outros são reserva -->
+  <link rel="icon" href="pasta_img_icon/icon/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="pasta_img_icon/icone-preview.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="pasta_img_icon/icon/favicon-192x192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="pasta_img_icon/icon/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="pasta_img_icon/icon/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" href="pasta_img_icon/icon/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="pasta_img_icon/icon/favicon-192x192.png" sizes="192x192">
-  <link rel="apple-touch-icon" href="pasta_img_icon/icon/apple-touch-icon.png">
-  <title>Miguel Fiaschi</title>
 </head>
 
-
 <body>
-  <div class="particulas"></div>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
-  <nav class="navegacao">
-    <ul class="menu">
-      <li>
-        <a href="#inicio" class="menu-link">Início</a>
-      </li>
+  <header class="topo">
+    <div class="topo-interno">
+      <a href="#inicio" class="marca">Miguel Fiaschi</a>
+      <nav aria-label="Seções">
+        <ul class="menu">
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#competencias">Competências</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      <li>
-        <a href="#sobre" class="menu-link">Sobre</a>
-      </li>
+  <main id="conteudo">
 
-      <li>
-        <a href="#projetos" class="menu-link">Projetos</a>
-      </li>
+    <!-- INÍCIO -->
+    <section id="inicio" class="inicio">
+      <div class="inicio-texto">
+        <img src="pasta_img_icon/img/foto_perfil_atualizada.jpg" alt="Foto de Miguel Fiaschi" class="foto"
+          width="144" height="144" />
+        <h1>Miguel Fiaschi</h1>
+        <p class="cargo">Product Owner, análise de dados e desenvolvimento</p>
+        <p class="lead">
+          Sou estagiário de Product Owner na ThreeO. Cuido de chamados, requisitos e testes de um sistema
+          usado por 8 cooperativas do Sicoob, e automatizo processos internos com Python.
+        </p>
+        <div class="acoes">
+          <a class="botao botao-principal" href="arquivos/Curriculo_Miguel_Fiaschi.pdf" download>Baixar currículo (PDF)</a>
+          <a class="botao" href="#projetos">Ver projetos</a>
+        </div>
+      </div>
 
-      <li>
-        <a href="#contatos" class="menu-link">Contato</a>
-      </li>
-    </ul>
-  </nav>
+      <!-- Cartão no formato de um item de backlog: resume o que um recrutador procura -->
+      <article class="chamado" aria-labelledby="chamado-titulo">
+        <div class="chamado-topo">
+          <span class="chamado-id">Perfil #2026</span>
+          <span class="status"><span class="status-ponto" aria-hidden="true"></span>Disponível para estágio</span>
+        </div>
+        <h2 id="chamado-titulo" class="chamado-titulo">Estágio em suporte, sistemas ou produto</h2>
+        <dl class="campos">
+          <div>
+            <dt>Área principal</dt>
+            <dd>Suporte e sistemas</dd>
+          </div>
+          <div>
+            <dt>Também atuo com</dt>
+            <dd>Análise de requisitos e Product Owner</dd>
+          </div>
+          <div>
+            <dt>Experiência</dt>
+            <dd>Estagiário de PO na ThreeO desde mai/2026</dd>
+          </div>
+          <div>
+            <dt>Formação</dt>
+            <dd>Tecnologia em Banco de Dados, Mackenzie (até jul/2028)</dd>
+          </div>
+          <div>
+            <dt>Local</dt>
+            <dd>ABC Paulista e São Paulo, presencial ou híbrido; também remoto</dd>
+          </div>
+          <div>
+            <dt>Idiomas</dt>
+            <dd>Português nativo, inglês intermediário</dd>
+          </div>
+        </dl>
+      </article>
+    </section>
 
-  <main id="inicio" class="cabecalho">
-    <img src="pasta_img_icon/img/foto_perfil_atualizada.jpg" alt="Foto Perfil Atualizada" class="foto-perfil" />
-    <h1>Miguel Fiaschi</h1>
-    <p class="cabecalho-sub-titulo">Product Owner and FullStack Developer</p>
+    <!-- SOBRE -->
+    <section id="sobre" class="secao">
+      <h2 class="secao-titulo">Sobre mim</h2>
+      <div class="texto-corrido">
+        <p>
+          Comecei como Jovem Aprendiz na Termomecânica, alimentando linha de produção na Fábrica 3. Lá aprendi
+          na prática o que é processo, qualidade e melhoria contínua.
+        </p>
+        <p>
+          Hoje trabalho entre o negócio e o time de desenvolvimento: organizo e priorizo as demandas da squad,
+          faço a triagem dos chamados no Azure DevOps, levanto requisitos, testo funcionalidades e acompanho
+          as entregas. No tempo livre, construo projetos de dados e automação para aprender coisas novas.
+        </p>
+        <p>
+          Estudo Tecnologia em Banco de Dados no Mackenzie, com foco em análise e engenharia de dados.
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section id="experiencia" class="secao">
+      <h2 class="secao-titulo">Experiência</h2>
+      <ol class="linha-tempo">
+        <li class="evento">
+          <p class="evento-data">mai/2026 até hoje</p>
+          <div>
+            <h3>Estagiário de Product Owner</h3>
+            <p class="evento-local">THREEO IT COMPANY, São Bernardo do Campo (híbrido)</p>
+            <ul>
+              <li>Apoio ao Product Manager no acompanhamento, organização e priorização das demandas da squad.</li>
+              <li>Suporte, sustentação e melhoria contínua de um sistema BPM usado por 8 cooperativas do Sicoob
+                (Credisul, Crediacil, MetalCred, Crediconsumo, Cooperaso, Credisc, Cooper7 e 4474).</li>
+              <li>Gestão e triagem de chamados no Azure DevOps e atendimento ao cliente.</li>
+              <li>Levantamento de requisitos, testes de funcionalidades e acompanhamento de entregas.</li>
+              <li>Automação de processos internos com Python.</li>
+              <li>Contato com a stack do sistema: C#, Angular e PostgreSQL.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="evento">
+          <p class="evento-data">fev/2026 a mai/2026</p>
+          <div>
+            <h3>Jovem Aprendiz</h3>
+            <p class="evento-local">Fundação Salvador Arena / Termomecânica, São Bernardo do Campo</p>
+            <ul>
+              <li>Formação técnica e comportamental com foco em raciocínio lógico e resolução de problemas.</li>
+              <li>Alimentador de linha de produção na Fábrica 3: embalagem de bobinas, escovamento e laminação
+                de barras, pressurização de tubos e compactação de resíduos de alumínio.</li>
+              <li>Vivência em processos produtivos, qualidade e melhoria contínua.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="secao">
+      <h2 class="secao-titulo">Projetos</h2>
+      <p class="secao-intro">Projetos pessoais e da faculdade. Todos têm o código aberto no GitHub.</p>
+
+      <div class="destaques">
+        <article class="projeto">
+          <img src="pasta_img_icon/img/imagem_flow_metrics.jpg" alt="Capa do projeto FlowMetrics" class="projeto-capa"
+            loading="lazy" width="960" height="640" />
+          <div class="projeto-corpo">
+            <h3>FlowMetrics</h3>
+            <p>
+              Pipeline que coleta métricas do Google Analytics todos os dias às 8h, grava num banco MySQL e
+              mostra tudo num dashboard, com histórico de 30 dias. Roda sozinho, sem ninguém abrir o terminal.
+            </p>
+            <ul class="tags" aria-label="Tecnologias">
+              <li>Python</li><li>MySQL</li><li>Google Analytics API</li><li>Streamlit</li><li>CustomTkinter</li>
+            </ul>
+            <a class="link" href="https://github.com/fiaschiii/FlowMetrics" target="_blank" rel="noopener">Código no GitHub</a>
+          </div>
+        </article>
+
+        <article class="projeto">
+          <img src="pasta_img_icon/img/imagem_data_server.jpg" alt="Capa do projeto DataServer" class="projeto-capa"
+            loading="lazy" width="960" height="960" />
+          <div class="projeto-corpo">
+            <h3>DataServer</h3>
+            <p>
+              Sistema de cadastro de produtos com API REST em Java (paginação e busca), um microserviço em
+              Python para análise estatística e interface em React. Banco PostgreSQL na nuvem.
+            </p>
+            <ul class="tags" aria-label="Tecnologias">
+              <li>Java 21</li><li>Spring Boot</li><li>FastAPI</li><li>React</li><li>PostgreSQL</li><li>Supabase</li>
+            </ul>
+            <a class="link" href="https://github.com/fiaschiii/DataServer" target="_blank" rel="noopener">Código no GitHub</a>
+          </div>
+        </article>
+
+        <article class="projeto">
+          <img src="pasta_img_icon/img/iamgem_MF_NET.jpg" alt="Capa do projeto MF NET" class="projeto-capa"
+            loading="lazy" width="960" height="960" />
+          <div class="projeto-corpo">
+            <h3>MF NET</h3>
+            <p>
+              Rede neural escrita do zero só com NumPy, sem bibliotecas de machine learning. Reconhece dígitos
+              desenhados à mão numa interface própria e acerta 96,73% das imagens de teste do MNIST.
+            </p>
+            <ul class="tags" aria-label="Tecnologias">
+              <li>Python</li><li>NumPy</li><li>Tkinter</li><li>Pillow</li>
+            </ul>
+            <a class="link" href="https://github.com/fiaschiii/MF_NET" target="_blank" rel="noopener">Código no GitHub</a>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="subtitulo">Outros projetos</h3>
+      <ul class="lista-projetos">
+        <li>
+          <div>
+            <h4>Análise de dados da ANEEL</h4>
+            <p>Projeto Aplicado do Mackenzie, em grupo: análise dos dados abertos de geração de energia elétrica
+              no Brasil, com foco na participação das fontes renováveis. Em andamento.</p>
+            <p class="tags-texto">Python, dados abertos</p>
+          </div>
+          <a class="link" href="https://github.com/fiaschiii/PROJETO_APLICADO_GRUPO_7_MACKENZIE" target="_blank" rel="noopener">Código no GitHub</a>
+        </li>
+        <li>
+          <div>
+            <h4>Industrial Analysis</h4>
+            <p>Mostra como a variação de temperatura muda a quantidade de defeitos num processo industrial e
+              encontra o ponto ideal de operação da máquina.</p>
+            <p class="tags-texto">Python, Pandas, NumPy, Matplotlib</p>
+          </div>
+          <a class="link" href="https://github.com/fiaschiii/IndustrialAnalysis" target="_blank" rel="noopener">Código no GitHub</a>
+        </li>
+        <li>
+          <div>
+            <h4>AutoForm</h4>
+            <p>Automação que faz o cadastro de funcionários num Google Forms, sem preenchimento manual.</p>
+            <p class="tags-texto">Python, Playwright, PyAutoGUI, Pandas</p>
+          </div>
+          <a class="link" href="https://github.com/fiaschiii/AutoForm" target="_blank" rel="noopener">Código no GitHub</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- COMPETÊNCIAS -->
+    <section id="competencias" class="secao">
+      <h2 class="secao-titulo">Competências</h2>
+      <div class="tabela-rolagem">
+        <table class="tabela">
+          <tbody>
+            <tr>
+              <th scope="row">Suporte e sustentação</th>
+              <td>Triagem e gestão de chamados no Azure DevOps, atendimento ao cliente, testes funcionais</td>
+            </tr>
+            <tr>
+              <th scope="row">Produto e requisitos</th>
+              <td>Metodologias ágeis, priorização de backlog, levantamento de requisitos, acompanhamento de entregas</td>
+            </tr>
+            <tr>
+              <th scope="row">Dados</th>
+              <td>SQL, PostgreSQL, MySQL, Excel, Python para análise (Pandas, NumPy, Matplotlib), Streamlit</td>
+            </tr>
+            <tr>
+              <th scope="row">Desenvolvimento</th>
+              <td>Python, Java com Spring Boot, FastAPI, React, HTML e CSS, Git e GitHub (em projetos pessoais)</td>
+            </tr>
+            <tr>
+              <th scope="row">Stack do trabalho</th>
+              <td>C#, Angular e PostgreSQL (contato no dia a dia)</td>
+            </tr>
+            <tr>
+              <th scope="row">Comportamentais</th>
+              <td>Comunicação entre negócio e tecnologia, perfil analítico, organização, resolução de problemas</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section id="formacao" class="secao">
+      <h2 class="secao-titulo">Formação</h2>
+      <div class="formacao">
+        <div>
+          <h3>Tecnologia em Banco de Dados: Análise, Mineração e Engenharia de Dados</h3>
+          <p class="evento-local">Universidade Presbiteriana Mackenzie, jan/2026 a jul/2028 (em andamento)</p>
+          <p>Modelagem de dados, bancos relacionais e não relacionais, análise e tratamento de dados para apoio
+            à tomada de decisão.</p>
+        </div>
+        <div>
+          <h3>Conhecimentos complementares</h3>
+          <p>Normas ISO 9001 (Qualidade), ISO 14001 (Ambiental), ISO 45001 (Saúde e Segurança Ocupacional) e
+            ISO 50001 (Energia), estudadas no programa Jovem Aprendiz.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="secao contato">
+      <h2 class="secao-titulo">Contato</h2>
+      <div class="contato-grade">
+        <div>
+          <p class="secao-intro">Estou procurando estágio. Se tiver uma vaga ou quiser conversar, é só chamar.</p>
+          <ul class="canais">
+            <li><span>E-mail</span><a href="mailto:mfiaschi36@gmail.com">mfiaschi36@gmail.com</a></li>
+            <li><span>GitHub</span><a href="https://github.com/fiaschiii" target="_blank" rel="noopener">github.com/fiaschiii</a></li>
+            <!-- Troque SEU-USUARIO pelo seu endereço do LinkedIn e apague as marcas de comentário desta linha:
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/SEU-USUARIO" target="_blank" rel="noopener">linkedin.com/in/SEU-USUARIO</a></li>
+            -->
+            <li><span>Currículo</span><a href="arquivos/Curriculo_Miguel_Fiaschi.pdf" download>Baixar em PDF</a></li>
+          </ul>
+        </div>
+
+        <form class="formulario" id="formulario" novalidate>
+          <label for="mensagem">Mande uma mensagem pelo WhatsApp</label>
+          <textarea id="mensagem" rows="5" placeholder="Olá, Miguel! Vi seu portfólio e..."></textarea>
+          <p class="erro" id="erro" role="alert" hidden>Escreva uma mensagem antes de enviar.</p>
+          <button type="submit" class="botao botao-principal">Abrir no WhatsApp</button>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <section id="sobre" class="sobre">
-    <h2 class="sobre-titulo">Sobre Mim</h2>
-    <div class="sobre-caixa">
-      <p class="sobre-paragrafo">
-        Sou um profissional de tecnologia com atuação multidisciplinar,
-        unindo desenvolvimento Full Stack, gestão de produtos e melhoria contínua de processos.
-        Atualmente, exerço a função de Product Owner, atuando na definição de prioridades,
-        alinhamento entre áreas de negócio e desenvolvimento, além de garantir que as entregas gerem valor para clientes
-        e usuários.
-      </p>
-    </div>
-  </section>
-
-  <section id="projetos" class="projetos">
-    <h2 class="projetos-titulo">Meus Principais Projetos</h2>
-    <div class="projetos-caixa">
-
-
-      <!-- Projeto DataServer -->
-      <div class="projetos-card">
-        <img src="https://i.ibb.co/RkrS6Mz0/imagem-data-server.jpg" alt="Projeto 1" class="projetos-imagem" />
-        <div class="caixa-textos-projetos">
-          <h3 class="info-projetos">DataServer</h3>
-          <p class="paragrafo-projetos">
-            Sistema FullStack de gerenciamento de produtos construído com Java, Python e React.
-          </p>
-        </div>
-      </div>
-
-      <!-- Projeto FlowMetrics-->
-      <div class="projetos-card">
-        <img src="https://i.ibb.co/DDCcH4Tx/imagem-flow-metrics.jpg" alt="Projeto 1" class="projetos-imagem" />
-        <div class="caixa-textos-projetos">
-          <h3 class="info-projetos">FlowMetrics</h3>
-          <p class="paragrafo-projetos">
-            Sistema automatizado de análise de dados que coleta métricas do Google Analytics,
-            armazena em um banco MySQL e exibe em um dashboard interativo — de forma totalmente automática.
-          </p>
-        </div>
-      </div>
-
-      <!-- MF NET-->
-      <div class="projetos-card">
-        <img src="https://i.ibb.co/dwxw0q90/iamgem-MF-NET.jpg" alt="Projeto 1" class="projetos-imagem" />
-        <div class="caixa-textos-projetos">
-          <h3 class="info-projetos">Rede Neural MF NET</h3>
-          <p class="paragrafo-projetos">
-            Rede Neural desenvolvida em Python.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contatos" class="contatos">
-    <h2 class="contatos-titulo">Entre em Contato</h2>
-    <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
-      <div class="grupo-form">
-        <textarea class="campo-form" placeholder="Digite sua mensagem" rows="6" id="mensagem"></textarea>
-      </div>
-      <button type="submit" class="botao-form">Enviar WhatsApp</button>
-    </form>
-  </section>
+  <footer class="rodape">
+    <p>Miguel Fiaschi, 2026. Site feito em HTML, CSS e JavaScript.</p>
+  </footer>
 
   <script src="script.js"></script>
-
 </body>
 
 </html>
