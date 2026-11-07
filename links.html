@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Miguel Fiaschi | Links</title>
+  <meta name="description" content="LinkedIn, portfólio e currículo de Miguel Fiaschi." />
+
+  <link rel="icon" href="pasta_img_icon/icon/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="pasta_img_icon/icon/favicon.ico" sizes="32x32" />
+  <link rel="apple-touch-icon" href="pasta_img_icon/icon/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    /* Mesmas cores do site e do currículo */
+    :root {
+      --fundo: #f5f7f5;
+      --superficie: #ffffff;
+      --texto: #18221c;
+      --texto-suave: #4f5e55;
+      --linha: #d6ddd8;
+      --verde: #1d5c3b;
+      --verde-claro: #e2efe6;
+      --verde-texto-botao: #ffffff;
+      color-scheme: light;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fundo: #0f1612;
+        --superficie: #16201a;
+        --texto: #e3ebe5;
+        --texto-suave: #a3b3a8;
+        --linha: #2a3830;
+        --verde: #6cc08f;
+        --verde-claro: #1d3326;
+        --verde-texto-botao: #0f1612;
+        color-scheme: dark;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.25rem;
+      background: var(--fundo);
+      color: var(--texto);
+      font-family: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .cartao {
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+
+    .foto {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 45%;
+      border: 4px solid var(--superficie);
+      box-shadow: 0 0 0 1px var(--linha);
+      margin: 0 auto 1.25rem;
+      display: block;
+    }
+
+    h1 {
+      font-family: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
+      font-size: 2.2rem;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      color: var(--verde);
+    }
+
+    .cargo {
+      color: var(--texto-suave);
+      margin-top: 0.4rem;
+    }
+
+    .links {
+      list-style: none;
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 2rem;
+      text-align: left;
+    }
+
+    .links a {
+      display: block;
+      padding: 0.95rem 1.2rem;
+      border: 1.5px solid var(--verde);
+      border-radius: 12px;
+      background: var(--superficie);
+      color: var(--texto);
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      background: var(--verde-claro);
+    }
+
+    .links a:focus-visible {
+      outline: 3px solid var(--verde);
+      outline-offset: 3px;
+    }
+
+    .links strong {
+      display: block;
+      font-weight: 600;
+      color: var(--verde);
+      font-size: 1.05rem;
+    }
+
+    .links span {
+      display: block;
+      font-size: 0.88rem;
+      color: var(--texto-suave);
+    }
+
+    /* O botão do currículo é o principal: fica preenchido */
+    .links .principal {
+      background: var(--verde);
+      border-color: var(--verde);
+    }
+
+    .links .principal strong,
+    .links .principal span {
+      color: var(--verde-texto-botao);
+    }
+
+    .links .principal:hover {
+      background: var(--verde);
+      filter: brightness(1.12);
+    }
+
+    .rodape {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: var(--texto-suave);
+    }
+
+    .rodape a {
+      color: var(--verde);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="cartao">
+    <img src="pasta_img_icon/img/foto_perfil_atualizada.jpg" alt="Foto de Miguel Fiaschi" class="foto" width="120"
+      height="120" />
+    <h1>Miguel Fiaschi</h1>
+    <p class="cargo">Product Owner, análise de dados e desenvolvimento</p>
+
+    <ul class="links">
+      <li>
+        <a class="principal" href="arquivos/Curriculo_Miguel_Fiaschi.pdf" download>
+          <strong>Baixar currículo</strong>
+          <span>Baixe o meu currículo no formato .pdf!</span>
+        </a>
+      </li>
+      <li>
+        <!-- Troque SEU-USUARIO (nas duas linhas abaixo) pelo seu endereço do LinkedIn -->
+        <a href="https://www.linkedin.com/in/miguel-fiaschi-53221934a/" target="_blank" rel="noopener">
+          <strong>LinkedIn</strong>
+          <span>Acesse meu perfil do Linkedin!</span>
+        </a>
+      </li>
+      <li>
+        <a href="./">
+          <strong>Site de portfólio</strong>
+          <span>Saiba um pouco mais sobre mim!</span>
+        </a>
+      </li>
+    </ul>
+
+    <p class="rodape">Ou escreva para <a href="mailto:mfiaschi36@gmail.com">mfiaschi36@gmail.com</a></p>
+  </main>
+</body>
+
+</html>
